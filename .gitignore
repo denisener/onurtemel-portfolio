@@ -1,0 +1,24 @@
+.DS_Store
+*.log
+
+# Nathan frontend
+nathan/node_modules/
+nathan/.next/
+nathan/out/
+nathan/build/
+nathan/.env*.local
+
+# Nathan API (Laravel)
+nathan-api/vendor/
+nathan-api/node_modules/
+nathan-api/.env
+nathan-api/.env.backup
+nathan-api/.env.production
+nathan-api/storage/*.key
+nathan-api/public/build/
+nathan-api/public/hot/
+nathan-api/public/storage
+nathan-api/storage/pail/
+
+# Deployment archive
+*.tar.gz

@@ -1,0 +1,66 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^node -v && npm -v$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npm install": true,
+        "npx next": true,
+        "/^php -v && composer --version 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd /Users/fikirmeclisi/Documents/resume/nathanreact-10/nathanreact-10/package/nathan-api && php artisan make:model Project -m && php artisan make:model PersonalInfo -m && php artisan make:model Service -m && php artisan make:model BlogPost -m && php artisan make:model Skill -m && php artisan make:model Education -m && php artisan make:model Experience -m && php artisan make:model Testimonial -m && php artisan make:model SiteSetting -m 2>&1 \\| grep -E \"created\\|INFO\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan migrate 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan make:controller Api/ProjectController --api && php artisan make:controller Api/PersonalInfoController && php artisan make:controller Api/ServiceController && php artisan make:controller Api/BlogPostController --api && php artisan make:controller Api/SkillController && php artisan make:controller Api/EducationController && php artisan make:controller Api/ExperienceController && php artisan make:controller Api/TestimonialController && php artisan make:controller Api/SiteSettingController && php artisan make:controller Api/UploadController 2>&1 \\| grep \"INFO\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan make:controller Api/ProjectController --api 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan install:api 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^echo \"yes\" \\| php artisan install:api --no-interaction 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan config:publish cors 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan route:list --path=api 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan storage:link 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan filament:install --panels --no-interaction 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan make:filament-user --name=\"Admin\" --email=\"admin@admin\\.com\" --password=\"admin123\" --no-interaction 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php artisan make:filament-resource Project --generate --no-interaction 2>&1 \\| tail -5$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^for model in PersonalInfo Service BlogPost Skill Education Experience Testimonial SiteSetting; do php artisan make:filament-resource \\$model --generate --no-interaction 2>&1 \\| grep \"INFO\"; done$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
